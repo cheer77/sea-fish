@@ -6,14 +6,15 @@
 @import "global";
 
 .header {
-    min-height: 192px;
+    min-height: 112px;
 }
 
 .menu-desc {
-    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+    min-height: 72px;
 
     &__items {
         display: flex;
