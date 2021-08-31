@@ -1,0 +1,33 @@
+$header: #436372;
+$hover: #a3bbc8;
+$footer: #7b7b7b;
+$title: #191919;
+$border: #f6f6f6;
+
+%Com-300 {
+    font-family: "Comfortaa-Light";
+    font-weight: 300;
+}
+%Com-400 {
+    font-family: "Comfortaa-Regular";
+    font-weight: 400;
+}
+%Com-500 {
+    font-family: "Comfortaa-Medium";
+    font-weight: 500;
+}
+%Com-600 {
+    font-family: "Comfortaa-SemiBold";
+    font-weight: 600;
+}
+%Com-700 {
+    font-family: "Comfortaa-Bold";
+    font-weight: 700;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

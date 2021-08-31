@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Comfortaa-Light";
+    font-weight: 300;
+    font-style: normal;
+    src: local("Comfortaa-Light"), url("../fonts/Comfortaa-Light.woff2") format("woff2"),
+        url("../fonts/Comfortaa-Light.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Comfortaa-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Comfortaa-Regular"), url("../fonts/Comfortaa-Regular.woff2") format("woff2"),
+        url("../fonts/Comfortaa-Regular.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Comfortaa-Medium";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Comfortaa-Medium"), url("../fonts/Comfortaa-Medium.woff2") format("woff2"),
+        url("../fonts/Comfortaa-Medium.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Comfortaa-SemiBold";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Comfortaa-SemiBold"), url("../fonts/Comfortaa-SemiBold.woff2") format("woff2"),
+        url("../fonts/Comfortaa-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Comfortaa-Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Comfortaa-Bold"), url("../fonts/Comfortaa-Bold.woff2") format("woff2"),
+        url("../fonts/Comfortaa-Bold.woff") format("woff");
+    font-display: swap;
+}

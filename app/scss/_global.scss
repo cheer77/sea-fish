@@ -1,0 +1,25 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    @extend %Com-400;
+    background-color: #fefefe;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+}
