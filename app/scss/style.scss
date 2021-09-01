@@ -7,6 +7,7 @@
 
 .header {
     min-height: 112px;
+    margin-bottom: 75px;
 }
 
 .menu-desc {
@@ -46,12 +47,13 @@
 
 .menu-search {
     &__form {
-        padding-top: 38px;
+        margin-top: 12px;
         max-width: 100%;
         border: none;
         border-bottom: 1px solid #73767d;
     }
     &__label {
+        display: block;
         position: relative;
         &::before {
             content: "";
@@ -71,6 +73,224 @@
         outline: 0;
         &::placeholder {
             font-size: 14px;
+        }
+    }
+}
+
+// Content Part ------------------------------------------------------------------------------------->
+
+.slider {
+    // min-height: 747px;
+    background-color: #010409;
+
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+        min-width: 0;
+        text-align: center;
+        position: relative;
+    }
+    &__bolck-text {
+        margin-top: 201px;
+        max-width: 601px;
+        color: #fff;
+    }
+    &__title {
+        position: absolute;
+        text-align: start;
+        max-width: 601px;
+        font-size: 80px;
+        line-height: 89px;
+        color: #d7d8da;
+    }
+    &__link {
+        display: block;
+        margin-top: 226px;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 16px 32px;
+        width: 261px;
+        background: #266edb;
+        border-radius: 8px;
+    }
+    &__img {
+        object-fit: cover;
+    }
+}
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-20px);
+}
+.slick-dots li {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #73767d;
+    border-radius: 50%;
+    margin-left: 16px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+    border: 2px solid #266edb;
+}
+/* Элемент точки */
+.slick-dots li button {
+    outline: 0;
+}
+
+// Content Part ------------------------------- End ------------------------------------------------------>
+
+.footer {
+    min-height: 600px;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #010409;
+        @extend %Com-700;
+        margin-bottom: 24px;
+    }
+
+    &__links-items,
+    &__cont-items,
+    &__social-text {
+        color: #73767d;
+    }
+
+    &__links {
+        max-width: 184px;
+    }
+
+    &__links-item {
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__cont {
+        max-width: 189px;
+    }
+    &__cont-item {
+        margin-bottom: 23px;
+        &:first-child {
+            padding-top: 4px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__cont-phone,
+    &__cont-email {
+        padding-left: 32px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -3px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__cont-phone {
+        &::after {
+            background-image: url("../images/icons/phone.svg");
+        }
+    }
+    &__cont-email {
+        &::after {
+            background-image: url("../images/icons/email.svg");
+        }
+    }
+
+    &__social {
+        max-width: 250px;
+    }
+    &__social-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    &__social-items {
+        display: flex;
+    }
+    &__social-link {
+        margin-right: 18px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__payment {
+        max-width: 214px;
+    }
+    &__payment-items {
+        display: flex;
+    }
+    &__payment-mir,
+    &__payment-visa {
+        margin-right: 18px;
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        margin-top: 80px;
+        height: 80px;
+        width: 191px;
+    }
+}
+.footer-bottom {
+    margin-top: 25px;
+
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 55px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #d7d8da;
+            text-align: center;
+            height: 1px;
+            width: 1330px;
+            bottom: -7px;
+        }
+    }
+    &__rule {
+        font-size: 12px;
+        line-height: 13px;
+        color: #73767d;
+        margin-bottom: 14px;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
