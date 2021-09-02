@@ -149,6 +149,201 @@
     outline: 0;
 }
 
+.product {
+    margin-top: 122px;
+
+    &__title {
+        margin-bottom: 56px;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+    }
+    &__btn {
+        margin-right: 10px;
+        padding: 16px 56px;
+        text-align: center;
+        background: #fefefe;
+        box-shadow: 0px 0px 4px rgba(1, 1, 1, 0.1);
+        border-radius: 8px;
+        line-height: 18px;
+        color: #73767d;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__btn--active {
+        background-color: #010409;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fefefe;
+    }
+
+    &__items {
+        margin-top: 39px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-top: 9px;
+        max-width: 350px;
+        min-height: 438px;
+        padding: 24px 23.5px;
+        background: #fefefe;
+        box-shadow: 0px 0px 4px rgba(1, 1, 1, 0.1);
+        border-radius: 8px;
+        position: relative;
+        &:hover {
+            background: #fcfcfc;
+        }
+    }
+    &__item:hover .product__info {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    &__stars {
+        margin-bottom: 20px;
+        margin-left: 200px;
+    }
+
+    &__img-wrap {
+        position: relative;
+        border-radius: 8px;
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 8px;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(1, 4, 9, 0.2);
+            background-position: center;
+        }
+    }
+
+    &__img {
+        border-radius: 8px;
+        object-fit: cover;
+        z-index: 1;
+
+        max-width: 302px;
+        min-height: 230px;
+    }
+    &__bestseller,
+    &__like,
+    &__info,
+    &__available {
+        z-index: 3;
+        position: absolute;
+    }
+
+    &__info {
+        opacity: 0;
+        color: #fbfcfe;
+        left: 40px;
+        top: 130px;
+        transition: opacity 0.5s;
+    }
+
+    &__info-title {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 16px;
+    }
+    &__info-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__info-type {
+        font-size: 12px;
+        line-height: 13px;
+        text-align: right;
+        color: #d7d8da;
+        margin-right: 8px;
+    }
+    &__info-weight {
+        margin-left: 8px;
+    }
+
+    &__bestseller {
+        top: 75px;
+        left: 40px;
+        padding: 8px 16px;
+        color: #fbfcfe;
+        background: #db2626;
+        border-radius: 4px;
+    }
+    &__like {
+        top: 82px;
+        left: 290px;
+    }
+
+    &__available {
+        font-size: 14px;
+        line-height: 16px;
+        color: #fefefe;
+        text-shadow: 0px 0px 6px rgba(1, 1, 1, 0.2);
+        left: 40px;
+        top: 260px;
+    }
+
+    &__descr {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    &__descr-type {
+        background: linear-gradient(90deg, #73767d 0.21%, rgba(115, 118, 125, 0) 84.65%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 10px;
+        @extend %Com-700;
+    }
+    &__descr-wight {
+        font-size: 14px;
+        line-height: 16px;
+        color: #73767d;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+    &__price-wrap {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price-num,
+    &__price-value {
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: #010409;
+    }
+
+    &__price-btn {
+        padding: 16px 32px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #f4f5f5;
+        background: #266edb;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
 // Content Part ------------------------------- End ------------------------------------------------------>
 
 .footer {

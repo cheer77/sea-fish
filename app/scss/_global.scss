@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    overflow-x: hidden;
+    // overflow-x: hidden;/
 }
 
 body {
@@ -22,4 +22,8 @@ main {
 }
 
 .title {
+    font-size: 48px;
+    line-height: 54px;
+    color: #010409;
+    @extend %Com-700;
 }
