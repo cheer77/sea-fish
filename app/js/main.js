@@ -8,12 +8,31 @@ $(function () {
     });
 
 
+    $('.menu-mob__btn').on('click', function (event) {
+        $('.menu-mob__btn').toggleClass('menu-mob__btn--active');
+        $('.menu-mob__wrap').toggleClass('menu-mob__wrap--active');
+        $('body').toggleClass('lock');
+    });
+
 
     $('.product__btn').on('click', function (e) {
 
         e.preventDefault();
         $('.product__btn').removeClass('product__btn--active');
         $(this).addClass('product__btn--active');
+
+        $('.product__items').removeClass('product__items--active');
+        $($(this).attr('href')).addClass('product__items--active');
+
+    });
+
+
+
+    $('.catalog__filter-link ').on('click', function (e) {
+
+        e.preventDefault();
+        $('.catalog__filter-link').removeClass('catalog__filter-link--active');
+        $(this).addClass('catalog__filter-link--active');
 
         $('.product__items').removeClass('product__items--active');
         $($(this).attr('href')).addClass('product__items--active');
@@ -45,11 +64,28 @@ $(function () {
             }
         ]
     });
+
     $('.product__btns-mob').slick({
         infinite: false,
         slidesToShow: 3,
         arrows: false,
         adaptiveHeight: true
+    });
+
+
+    $('.reviews__slider').slick({
+        infinite: false,
+        slidesToShow: 3,
+        arrows: true,
+        adaptiveHeight: true,
+        prevArrow: "<img src='images/icons/arrow-left.svg' class='prev-review' alt='1'>",
+        nextArrow: "<img src='images/icons/arrow-right.svg' class='next-review' alt='2'>",
+        responsive: [
+            {
+                breakpoint: 768,
+                slidesToShow: 2,
+            }
+        ]
     });
 
 });

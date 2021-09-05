@@ -1,2 +1,41 @@
 @media (max-width: 768px) {
+    .lock {
+        overflow: hidden;
+    }
+    .header {
+        min-height: 80px;
+        margin-bottom: 5px;
+    }
+    .menu-desc {
+        display: none;
+    }
+    .menu-search {
+        display: none;
+    }
+    .menu-mob {
+        display: block;
+        &__wrap--active {
+            transform: translateY(0px);
+        }
+
+        &__btn--active {
+            padding-top: 12px;
+            & span {
+                margin-bottom: -2px;
+                transition: all 0.9s;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(4) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
