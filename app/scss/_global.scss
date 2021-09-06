@@ -35,18 +35,18 @@ main {
     margin-bottom: 80px;
     &__prev {
         position: relative;
+        padding-right: 17px;
         &::after {
             content: "";
             position: absolute;
             background-image: url("../images/icons/bread-crumbs.svg");
             width: 8px;
             height: 12px;
-            right: -16px;
+            right: 5px;
             top: 1px;
         }
     }
     &__next {
         color: #266edb;
-        margin-left: 20px;
     }
 }

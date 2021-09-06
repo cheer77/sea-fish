@@ -88,4 +88,19 @@ $(function () {
         ]
     });
 
+    $('.product__slide-thumb').slick({
+        focusOnSelect: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        vertical: true,
+        draggable: false,
+        asNavFor: '.product__slide-big'
+    });
+    $('.product__slide-big').slick({
+        asNavFor: '.product__slide-thumb',
+        draggable: false,
+        arrows: false,
+        fade: true
+    });
+
 });
