@@ -168,34 +168,201 @@
 
 
 
-        <section class="product">
+        <section class="products">
             <div class="container">
 
-                <div class="product__inner">
+                <div class="products__inner">
 
-                    <div class="product__slider">
-                        <div class="product__slider-one">
-                            <div class="product__slide-thumb">
-                                <div class="product__slide-thumb-item">
-                                    <img src="images/products/1.jpg" alt="product image">
+                    <div class="products__wrap">
+                        <div class="product-one__slide product-slide">
+                            <div class="product-slide__big">
+                                <div class="product-slide__big-item">
+                                    <p class="product-slide__big-text">Хит продаж</p>
+                                    <img class="product-slide__big-img" src="images/products/1.jpg" alt="product image">
                                 </div>
-                                <div class="product__slide-thumb-item">
-                                    <img src="images/products/2.jpg" alt="product image">
+                                <div class="product-slide__big-item">
+                                    <p class="product-slide__big-text">Хит продаж</p>
+                                    <img class="product-slide__big-img" src="images/products/2.jpg" alt="product image">
+                                </div>
+                                <div class="product-slide__big-item">
+                                    <p class="product-slide__big-text">Хит продаж</p>
+                                    <img class="product-slide__big-img" src="images/products/3.jpg" alt="product image">
                                 </div>
                             </div>
-                            <div class="product__slide-big">
-                                <div class="product__slide-big-item">
-                                    <img src="images/products/1.jpg" alt="product image">
+                            <div class="product-slide__thumb">
+                                <div class="product-slide__thumb-item">
+                                    <img class="product-slide__thumb-img" src="images/products/1.jpg"
+                                        alt="product image">
                                 </div>
-                                <div class="product__slide-big-item">
-                                    <img src="images/products/2.jpg" alt="product image">
+                                <div class="product-slide__thumb-item">
+                                    <img class="product-slide__thumb-img" src="images/products/2.jpg"
+                                        alt="product image">
+                                </div>
+                                <div class="product-slide__thumb-item">
+                                    <img class="product-slide__thumb-img" src="images/products/3.jpg"
+                                        alt="product image">
                                 </div>
                             </div>
                         </div>
 
+                        <div class="products__descr">
+                            <p class="products__descr-title">Сельдь с/с 500 гр.</p>
+
+                            <div class="products__descr-inner">
+                                <div class="products__descr-stars-box">
+                                    <div class="products__descr-stars stars" data-rateyo-rating="4.5"></div>
+                                    <p class="products__descr-stars-nums">53</p>
+                                </div>
+
+                                <p class="products__descr-buy">Купили <span> 143</span> раза!</p>
+                            </div>
+
+                            <div class="products__descr-price">
+
+                                <p class="products__descr-old">218,70 ₽</p>
+                                <p class="products__descr-new">118,40 ₽</p>
+                                <p class="products__descr-for">Цена за 500 грамм</p>
+
+                            </div>
+
+                            <div class="products__descr-btns">
+                                <button class="products__descr-btn">Купить</button>
+                                <p class="products__descr-btn-text">Есть на складе!</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="product__tabs"></div>
+                    <div class="products__info">
+
+                        <div class="products__tabs">
+                            <a href="tab1" class="products__tab products__tab--active">О товаре</a>
+                            <a href="tab2" class="products__tab">Отзывы (53)</a>
+                            <a href="tab3" class="products__tab">Вопросы (12)</a>
+                        </div>
+
+                        <div class="products__general products__tab-content products__tab-content--active" id="tab1">
+                            <p class="products__general-title"></p>
+                            <div class="products__general-wrap1">
+                                <p class="products__general-manufact">Производитель:</p>
+                                <p class="products__general-company">ООО «Мореодор»</p>
+                            </div>
+                            <div class="products__general-wrap1">
+                                <p class="products__general-manuf-country">Страна производства:</p>
+                                <p class="products__general-country">Россия</p>
+                            </div>
+                            <div class="products__general-wrap1">
+                                <p class="products__general-weight">Вес:</p>
+                                <p class="products__general-quantity">500 гр.</p>
+                            </div>
+
+                            <p class="products__general-total">Пищевая ценность на 100 грамм:</p>
+                            <div class="products__general-total-wrap">
+                                <div class="products__general-total-proteins">
+                                    <p class="products__general-total-title">Белки</p>
+                                    <p class="products__general-total-text">17,5 г.</p>
+                                </div>
+                                <div class="products__general-total-fat">
+                                    <p class="products__general-total-title">Жиры</p>
+                                    <p class="products__general-total-text">2 г.</p>
+                                </div>
+                                <div class="products__general-total-carbon">
+                                    <p class="products__general-total-title">Углеводы</p>
+                                    <p class="products__general-total-text">0</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products__reviews products__tab-content" id="tab2">
+
+                            <p class="products__tab-content-title">Чтобы задать вопрос, Вы должны <a
+                                    href="#">авторизоваться
+                                </a> на сайте.</p>
+
+                            <div class="products__reviews-slider">
+
+                                <div class="reviews__slider-item products__reviews-item">
+                                    <div class="reviews__slider-top">
+                                        <p class="reviews__slider-name">Светлана</p>
+                                        <p class="reviews__slider-date">15 июля 2021г.</p>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Всегда вежливый, аккуратный ,доброжелательный! Спасибо!
+                                    </p>
+                                </div>
+                                <div class="reviews__slider-item products__reviews-item">
+                                    <div class="reviews__slider-top">
+                                        <p class="reviews__slider-name">Владимир</p>
+                                        <p class="reviews__slider-date">12 марта 2021г.</p>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Благодарим за доставку! Все аккуратно и точно по чеку...;))
+                                    </p>
+                                </div>
+                                <div class="reviews__slider-item products__reviews-item">
+                                    <div class="reviews__slider-top">
+                                        <p class="reviews__slider-name">Константин</p>
+                                        <p class="reviews__slider-date">9 сентября 2020г.</p>
+                                    </div>
+                                    <p class="reviews__slider-text">
+                                        Все ок. !
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <button class="reviews__all-rewiew products__reviews-all">Все отзывы</button>
+                            <button class="reviews__leave-review products__reviews-leave">Оставить отзыв</button>
+
+                            <button class="product__show-more">Показать ещё 6</button>
+                        </div>
+
+                        <div class="products__questions products__tab-content" id="tab3">
+                            <p class="products__tab-content-title">Чтобы задать вопрос, Вы должны <a
+                                    href="#">авторизоваться
+                                </a> на сайте.
+                            </p>
+
+                            <div class="products__questions-items">
+                                <div class="products__questions-item">
+                                    <div class="products__questions-top">
+                                        <p class="products__questions-name">Светлана</p>
+                                        <p class="products__questions-date">15 июля 2021г.</p>
+                                    </div>
+                                    <p class="products__questions-text">
+                                        Можно заказать сразу 5кг?
+                                    </p>
+                                    <a href="#" class="products__questions-link">Показать ответ</a>
+                                </div>
+
+                                <div class="products__questions-item">
+                                    <div class="products__questions-top">
+                                        <p class="products__questions-name">Владимир</p>
+                                        <p class="products__questions-date">15 июля 2021г.</p>
+                                    </div>
+                                    <p class="products__questions-text">
+                                        А могут доставить сегодня?
+                                    </p>
+                                    <a href="#" class="products__questions-link">Показать ответ</a>
+                                </div>
+
+                                <div class="products__questions-item">
+                                    <div class="products__questions-top">
+                                        <p class="products__questions-name">Николай</p>
+                                        <p class="products__questions-date">15 июля 2021г.</p>
+                                    </div>
+                                    <p class="products__questions-text">
+                                        Рыба костлявая?
+                                    </p>
+                                    <a href="#" class="products__questions-link">Показать ответ</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

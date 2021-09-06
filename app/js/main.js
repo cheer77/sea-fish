@@ -88,16 +88,16 @@ $(function () {
         ]
     });
 
-    $('.product__slide-thumb').slick({
+    $('.product-slide__thumb').slick({
+        asNavFor: '.product-slide__big',
         focusOnSelect: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         vertical: true,
-        draggable: false,
-        asNavFor: '.product__slide-big'
+        draggable: false
     });
-    $('.product__slide-big').slick({
-        asNavFor: '.product__slide-thumb',
+    $('.product-slide__big').slick({
+        asNavFor: '.product-slide__thumb',
         draggable: false,
         arrows: false,
         fade: true
