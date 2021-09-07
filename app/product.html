@@ -237,37 +237,38 @@
                     <div class="products__info">
 
                         <div class="products__tabs">
-                            <a href="tab1" class="products__tab products__tab--active">О товаре</a>
-                            <a href="tab2" class="products__tab">Отзывы (53)</a>
-                            <a href="tab3" class="products__tab">Вопросы (12)</a>
+                            <a href="#tab1" class="products__tab products__tab--active">О товаре</a>
+                            <a href="#tab2" class="products__tab">Отзывы (53)</a>
+                            <a href="#tab3" class="products__tab">Вопросы (12)</a>
                         </div>
 
                         <div class="products__general products__tab-content products__tab-content--active" id="tab1">
-                            <p class="products__general-title"></p>
+                            <p class="products__general-title">Общая информация:
+                            </p>
                             <div class="products__general-wrap1">
                                 <p class="products__general-manufact">Производитель:</p>
                                 <p class="products__general-company">ООО «Мореодор»</p>
                             </div>
-                            <div class="products__general-wrap1">
+                            <div class="products__general-wrap2">
                                 <p class="products__general-manuf-country">Страна производства:</p>
                                 <p class="products__general-country">Россия</p>
                             </div>
-                            <div class="products__general-wrap1">
+                            <div class="products__general-wrap3">
                                 <p class="products__general-weight">Вес:</p>
                                 <p class="products__general-quantity">500 гр.</p>
                             </div>
 
                             <p class="products__general-total">Пищевая ценность на 100 грамм:</p>
                             <div class="products__general-total-wrap">
-                                <div class="products__general-total-proteins">
+                                <div class="products__general-total-box">
                                     <p class="products__general-total-title">Белки</p>
                                     <p class="products__general-total-text">17,5 г.</p>
                                 </div>
-                                <div class="products__general-total-fat">
+                                <div class="products__general-total-box">
                                     <p class="products__general-total-title">Жиры</p>
                                     <p class="products__general-total-text">2 г.</p>
                                 </div>
-                                <div class="products__general-total-carbon">
+                                <div class="products__general-total-box">
                                     <p class="products__general-total-title">Углеводы</p>
                                     <p class="products__general-total-text">0</p>
                                 </div>
@@ -360,9 +361,349 @@
 
                             </div>
 
+                            <button class="product__show-more">Показать ещё 6</button>
                         </div>
 
                     </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="reviews">
+            <div class="container">
+
+                <div class="reviews__title-box">
+                    <div class="reviews__title-wrap">
+                        <p class="reviews__title-little">Отзывы</p>
+                        <p class="reviews__title title">О нас говорят</p>
+                    </div>
+                    <button class="reviews__title-btn">Оставить отзыв</button>
+                </div>
+
+                <div class="reviews__slider">
+
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-top">
+                            <p class="reviews__slider-name">Светлана</p>
+                            <p class="reviews__slider-date">15 июля 2021г.</p>
+                        </div>
+                        <p class="reviews__slider-text">
+                            Всегда вежливый, аккуратный ,доброжелательный! Спасибо!
+                        </p>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-top">
+                            <p class="reviews__slider-name">Владимир</p>
+                            <p class="reviews__slider-date">12 марта 2021г.</p>
+                        </div>
+                        <p class="reviews__slider-text">
+                            Благодарим за доставку! Все аккуратно и точно по чеку...;))
+                        </p>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-top">
+                            <p class="reviews__slider-name">Константин</p>
+                            <p class="reviews__slider-date">9 сентября 2020г.</p>
+                        </div>
+                        <p class="reviews__slider-text">
+                            Все ок. !
+                        </p>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-top">
+                            <p class="reviews__slider-name">Владимир</p>
+                            <p class="reviews__slider-date">12 марта 2021г.</p>
+                        </div>
+                        <p class="reviews__slider-text">
+                            Благодарим за доставку! Все аккуратно и точно по чеку...;))
+                        </p>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider-top">
+                            <p class="reviews__slider-name">Светлана</p>
+                            <p class="reviews__slider-date">15 июля 2021г.</p>
+                        </div>
+                        <p class="reviews__slider-text">
+                            Всегда вежливый, аккуратный ,доброжелательный! Спасибо!
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="reviews__all-rewiew">Все отзывы</button>
+                <button class="reviews__leave-review">Оставить отзыв</button>
+
+            </div>
+        </section>
+
+
+
+        <section class="benefits">
+            <div class="container">
+
+                <div class="benefits__inner">
+
+                    <div class="benefits__item">
+                        <img class="benefits__img" src="images/icons/gift.svg" alt="Иконка преимущества">
+                        <p class="benefits__text">Бесплатная доставка</p>
+                    </div>
+                    <div class="benefits__item">
+                        <img class="benefits__img" src="images/icons/thumb-up.svg" alt="Иконка преимущества">
+                        <p class="benefits__text">
+                            Отличное качество продуктов
+                        </p>
+                    </div>
+                    <div class="benefits__item">
+                        <img class="benefits__img" src="images/icons/discount.svg" alt="Иконка преимущества">
+                        <p class="benefits__text">
+                            Скидки постоянным клиентам
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contacts products-contacts">
+            <div class="container">
+
+                <div class="contacts__info">
+                    <p class="contacts__info-title">Заказы принимаются</p>
+
+                    <ul class="contacts__info-items">
+                        <li class="contacts__info-item">
+                            Открытые устрицы доставляются только в составе сетов. Вы можете добавить необходимое
+                            количество устриц из каталога к сету, который выберете;
+                        </li>
+                        <li class="contacts__info-item">
+                            Российские устрицы вне сетов доставляются закрытыми в упаковке по 6 шт.;
+                        </li>
+                        <li class="contacts__info-item">
+                            Импортные устрицы вне сетов доставляются закрытыми;
+                        </li>
+                        <li class="contacts__info-item">
+                            Минимальный заказ для доставки — 1 000 ₽ без учета стоимости доставки;
+                        </li>
+                        <li class="contacts__info-item">
+                            При заказе от 5 000 ₽ — доставка бесплатно.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="products-sale">
+            <div class="container">
+
+                <p class="products-sale__title-small">Другие покупатели</p>
+                <p class="products-sale__title title">С этим товаром покупают</p>
+
+                <div class="product__items--active products-sale__items">
+
+                    <div class="product__item products-sale__item">
+
+                        <div class="product__stars stars" data-rateyo-rating="5"></div>
+
+                        <a href="#" class="product__wrapper">
+
+                            <div class="product__img-wrap">
+                                <img class="product__img" src="images/products/3.jpg" alt="Изображение товара">
+                            </div>
+                            <div class="product__bestseller">Хит продаж</div>
+                            <a href="#" class="product__like">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9998 20.6L11.6462 20.9536C11.74 21.0473 11.8672 21.1 11.9998 21.1C12.1324 21.1 12.2596 21.0473 12.3534 20.9536L11.9998 20.6ZM2.45666 11.0569L2.1031 11.4104H2.1031L2.45666 11.0569ZM10.4567 3.05688L10.1031 3.41043L10.4567 3.05688ZM11.9998 4.60002L11.6462 4.95358C11.8415 5.14884 12.1581 5.14884 12.3534 4.95358L11.9998 4.60002ZM13.5429 3.05688L13.1894 2.70332V2.70332L13.5429 3.05688ZM12.3534 20.2465L2.81021 10.7033L2.1031 11.4104L11.6462 20.9536L12.3534 20.2465ZM21.1894 10.7033L11.6462 20.2465L12.3534 20.9536L21.8965 11.4104L21.1894 10.7033ZM10.1031 3.41043L11.6462 4.95358L12.3534 4.24647L10.8102 2.70333L10.1031 3.41043ZM12.3534 4.95358L13.8965 3.41043L13.1894 2.70332L11.6462 4.24647L12.3534 4.95358ZM17.5429 0.900024C15.91 0.900024 14.344 1.54869 13.1894 2.70332L13.8965 3.41043C14.8636 2.44333 16.1753 1.90002 17.5429 1.90002V0.900024ZM22.6998 7.05688C22.6998 8.42456 22.1565 9.73623 21.1894 10.7033L21.8965 11.4104C23.0511 10.2558 23.6998 8.68978 23.6998 7.05688H22.6998ZM23.6998 7.05688C23.6998 3.65654 20.9433 0.900024 17.5429 0.900024V1.90002C20.391 1.90002 22.6998 4.20883 22.6998 7.05688H23.6998ZM6.45666 1.90002C7.82434 1.90002 9.13601 2.44333 10.1031 3.41043L10.8102 2.70333C9.65558 1.54869 8.08956 0.900024 6.45666 0.900024V1.90002ZM1.2998 7.05688C1.2998 4.20883 3.60861 1.90002 6.45666 1.90002V0.900024C3.05632 0.900024 0.299805 3.65654 0.299805 7.05688H1.2998ZM2.81021 10.7033C1.84311 9.73623 1.2998 8.42456 1.2998 7.05688H0.299805C0.299805 8.68978 0.948469 10.2558 2.1031 11.4104L2.81021 10.7033Z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+                            <p class="product__available">Есть на складе!</p>
+
+                            <div class="product__info">
+                                <p class="product__info-title">Общая информация:</p>
+
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Производитель:</p>
+                                    <p class="product__info-text">ООО «Мореодор»</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Страна производства:</p>
+                                    <p class="product__info-text">Россия</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Вес:</p>
+                                    <p class="product__info-text">500</p>
+                                    <p class="product__info-weight">гр.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="product__descr">
+                            <p class="product__descr-type">Сельдь с/с 500 гр.</p>
+                            <p class="product__descr-wight">За 0,5 кг</p>
+                        </div>
+
+                        <div class="product__price">
+
+                            <div class="product__price-wrap">
+                                <p class="product__price-num">118,40</p>
+                                <p class="product__price-value">₽</p>
+                            </div>
+                            <button class="product__price-btn">В корзину</button>
+                        </div>
+
+                    </div>
+
+                    <div class="product__item products-sale__item">
+
+                        <div class="product__stars stars" data-rateyo-rating="5"></div>
+
+                        <a href="#" class="product__wrapper">
+
+                            <div class="product__img-wrap">
+                                <img class="product__img" src="images/products/4.jpg" alt="Изображение товара">
+                            </div>
+                            <div class="product__bestseller">Хит продаж</div>
+                            <a href="#" class="product__like">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9998 20.6L11.6462 20.9536C11.74 21.0473 11.8672 21.1 11.9998 21.1C12.1324 21.1 12.2596 21.0473 12.3534 20.9536L11.9998 20.6ZM2.45666 11.0569L2.1031 11.4104H2.1031L2.45666 11.0569ZM10.4567 3.05688L10.1031 3.41043L10.4567 3.05688ZM11.9998 4.60002L11.6462 4.95358C11.8415 5.14884 12.1581 5.14884 12.3534 4.95358L11.9998 4.60002ZM13.5429 3.05688L13.1894 2.70332V2.70332L13.5429 3.05688ZM12.3534 20.2465L2.81021 10.7033L2.1031 11.4104L11.6462 20.9536L12.3534 20.2465ZM21.1894 10.7033L11.6462 20.2465L12.3534 20.9536L21.8965 11.4104L21.1894 10.7033ZM10.1031 3.41043L11.6462 4.95358L12.3534 4.24647L10.8102 2.70333L10.1031 3.41043ZM12.3534 4.95358L13.8965 3.41043L13.1894 2.70332L11.6462 4.24647L12.3534 4.95358ZM17.5429 0.900024C15.91 0.900024 14.344 1.54869 13.1894 2.70332L13.8965 3.41043C14.8636 2.44333 16.1753 1.90002 17.5429 1.90002V0.900024ZM22.6998 7.05688C22.6998 8.42456 22.1565 9.73623 21.1894 10.7033L21.8965 11.4104C23.0511 10.2558 23.6998 8.68978 23.6998 7.05688H22.6998ZM23.6998 7.05688C23.6998 3.65654 20.9433 0.900024 17.5429 0.900024V1.90002C20.391 1.90002 22.6998 4.20883 22.6998 7.05688H23.6998ZM6.45666 1.90002C7.82434 1.90002 9.13601 2.44333 10.1031 3.41043L10.8102 2.70333C9.65558 1.54869 8.08956 0.900024 6.45666 0.900024V1.90002ZM1.2998 7.05688C1.2998 4.20883 3.60861 1.90002 6.45666 1.90002V0.900024C3.05632 0.900024 0.299805 3.65654 0.299805 7.05688H1.2998ZM2.81021 10.7033C1.84311 9.73623 1.2998 8.42456 1.2998 7.05688H0.299805C0.299805 8.68978 0.948469 10.2558 2.1031 11.4104L2.81021 10.7033Z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+                            <p class="product__available">Есть на складе!</p>
+
+                            <div class="product__info">
+                                <p class="product__info-title">Общая информация:</p>
+
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Производитель:</p>
+                                    <p class="product__info-text">ООО «Мореодор»</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Страна производства:</p>
+                                    <p class="product__info-text">Россия</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Вес:</p>
+                                    <p class="product__info-text">500</p>
+                                    <p class="product__info-weight">гр.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="product__descr">
+                            <p class="product__descr-type">Сельдь с/с 500 гр.</p>
+                            <p class="product__descr-wight">За 0,5 кг</p>
+                        </div>
+
+                        <div class="product__price">
+
+                            <div class="product__price-wrap">
+                                <p class="product__price-num">118,40</p>
+                                <p class="product__price-value">₽</p>
+                            </div>
+                            <button class="product__price-btn">В корзину</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product__item products-sale__item">
+
+                        <div class="product__stars stars" data-rateyo-rating="5"></div>
+
+                        <a href="#" class="product__wrapper">
+
+                            <div class="product__img-wrap">
+                                <img class="product__img" src="images/products/6.jpg" alt="Изображение товара">
+                            </div>
+                            <div class="product__bestseller">Хит продаж</div>
+                            <a href="#" class="product__like">
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9998 20.6L11.6462 20.9536C11.74 21.0473 11.8672 21.1 11.9998 21.1C12.1324 21.1 12.2596 21.0473 12.3534 20.9536L11.9998 20.6ZM2.45666 11.0569L2.1031 11.4104H2.1031L2.45666 11.0569ZM10.4567 3.05688L10.1031 3.41043L10.4567 3.05688ZM11.9998 4.60002L11.6462 4.95358C11.8415 5.14884 12.1581 5.14884 12.3534 4.95358L11.9998 4.60002ZM13.5429 3.05688L13.1894 2.70332V2.70332L13.5429 3.05688ZM12.3534 20.2465L2.81021 10.7033L2.1031 11.4104L11.6462 20.9536L12.3534 20.2465ZM21.1894 10.7033L11.6462 20.2465L12.3534 20.9536L21.8965 11.4104L21.1894 10.7033ZM10.1031 3.41043L11.6462 4.95358L12.3534 4.24647L10.8102 2.70333L10.1031 3.41043ZM12.3534 4.95358L13.8965 3.41043L13.1894 2.70332L11.6462 4.24647L12.3534 4.95358ZM17.5429 0.900024C15.91 0.900024 14.344 1.54869 13.1894 2.70332L13.8965 3.41043C14.8636 2.44333 16.1753 1.90002 17.5429 1.90002V0.900024ZM22.6998 7.05688C22.6998 8.42456 22.1565 9.73623 21.1894 10.7033L21.8965 11.4104C23.0511 10.2558 23.6998 8.68978 23.6998 7.05688H22.6998ZM23.6998 7.05688C23.6998 3.65654 20.9433 0.900024 17.5429 0.900024V1.90002C20.391 1.90002 22.6998 4.20883 22.6998 7.05688H23.6998ZM6.45666 1.90002C7.82434 1.90002 9.13601 2.44333 10.1031 3.41043L10.8102 2.70333C9.65558 1.54869 8.08956 0.900024 6.45666 0.900024V1.90002ZM1.2998 7.05688C1.2998 4.20883 3.60861 1.90002 6.45666 1.90002V0.900024C3.05632 0.900024 0.299805 3.65654 0.299805 7.05688H1.2998ZM2.81021 10.7033C1.84311 9.73623 1.2998 8.42456 1.2998 7.05688H0.299805C0.299805 8.68978 0.948469 10.2558 2.1031 11.4104L2.81021 10.7033Z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+                            <p class="product__available">Есть на складе!</p>
+
+                            <div class="product__info">
+                                <p class="product__info-title">Общая информация:</p>
+
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Производитель:</p>
+                                    <p class="product__info-text">ООО «Мореодор»</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Страна производства:</p>
+                                    <p class="product__info-text">Россия</p>
+                                </div>
+                                <div class="product__info-box">
+                                    <p class="product__info-type">Вес:</p>
+                                    <p class="product__info-text">500</p>
+                                    <p class="product__info-weight">гр.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="product__descr">
+                            <p class="product__descr-type">Сельдь с/с 500 гр.</p>
+                            <p class="product__descr-wight">За 0,5 кг</p>
+                        </div>
+
+                        <div class="product__price">
+
+                            <div class="product__price-wrap">
+                                <p class="product__price-num">118,40</p>
+                                <p class="product__price-value">₽</p>
+                            </div>
+                            <button class="product__price-btn">В корзину</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="subscr">
+            <div class="container">
+
+                <div class="subscr__inner">
+
+                    <div class="subscr__form-box">
+                        <p class="subscr__title">Дарим 500 ₽ на первый заказ!
+                        </p>
+                        <p class="subscr__text-sales">
+                            Зарезервируйте скидку* сейчас и мы поможем оформить ваш заказ.
+                        </p>
+                        <p class="subscr__rule">*скидка привязывается к номеру телефона</p>
+
+                        <form action="" class="subscr__form">
+                            <input type="text" class="subscr__form-input" required placeholder="Введите Ваш e-mail">
+                            <button type="submit" class="subscr__form-btn">Подписаться</button>
+                            <p class="subscr__form-text">
+                                Нажимая кнопку «Подписаться», я даю свое согласие на обработку
+                                моих персональных данных.
+                            </p>
+                        </form>
+                    </div>
+
+                    <img src="images/subs-block.svg" alt="" class="subscr__img">
 
                 </div>
 

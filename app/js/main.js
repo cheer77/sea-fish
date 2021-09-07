@@ -103,4 +103,19 @@ $(function () {
         fade: true
     });
 
+
+
+    $('.products__tab').on('click', function (e) {
+
+        e.preventDefault();
+        $('.products__tab').removeClass('products__tab--active');
+        $(this).addClass('products__tab--active');
+
+        $('.products__tab-content').removeClass('products__tab-content--active');
+        $($(this).attr('href')).addClass('products__tab-content--active');
+
+    });
+
+    $('.select-style, .cart-top__num').styler();
+
 });
